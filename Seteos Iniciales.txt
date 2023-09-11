@@ -1,0 +1,94 @@
+Pizzerias
+
+$ git clone https://github.com/marcos-y/PizzaYa.git
+https://github.com/FaztWeb/mysql-node-connection/blob/master/src/config/dbConnection.js
+https://www.youtube.com/watch?v=VxRXlUrV6y0
+
+git clone
+
+
+--------------***************************----------------------------------
+
+FRONT END
+
+* npm install
+* npm install react-router-dom
+* npm install react-bootstrap bootstrap
+* instalar axios
+
+
+---------------------**************************************-----------------------------
+
+BACKEND -- Pizzeria
+
+* Crear la carpeta backend
+* express;
+* ir a la carpeta backend con el navegador
+* npm install express-generator -g
+* npm install jsonwebtoken
+* npm install nodemon
+* npm install mysql
+* npm install morgan
+* npm instal multer --save    (libreria que permite manejar imagenes)
+	> se utliza la funcion DiskStorage de multer
+* npm install bcryptjs - para encripyar las claves.
+
+
+
+ 
+
+
+------------************************----------------------
+
+
+comunicacion entre FRONT END Y BACK END
+
+EN BACKEND
+
+* npm install cors --save
+* en el app.js escribir los siguiente: 
+
+	var cors = require('cors')
+	app.use(cors     --> esto hacerlo despues de incializar app.use(cors())
+
+
+
+links:
+https://www.npmjs.com/package/multer
+https://www.npmjs.com/package/mysql
+https://expressjs.com/es/starter/generator.html
+https://www.youtube.com/watch?v=kHmbg4Z7Ihw
+https://www.youtube.com/watch?v=EN6Dx22cPRI
+
+
+
+
+
+
+
+
+---------------------***********************---------------------------------
+
+
+otro modelo de conexion con mysql
+
+
+
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'juniors',
+  port: 3306,
+  database: 'pizzasya'
+});
+ 
+connection.connect(function(err) {
+  if (err) {
+    console.error('error connecting: ' + err.stack);
+    return;
+  }
+ 
+  console.log('SE CONECTO MYSQL -- NRO DE CONECCION: ' + connection.threadId);
+});
+
+
